@@ -15,6 +15,10 @@
 		3F4651202755C61400DC543F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F46511E2755C61400DC543F /* LaunchScreen.storyboard */; };
 		3F46512B2755C61400DC543F /* CoordinatorExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F46512A2755C61400DC543F /* CoordinatorExampleTests.swift */; };
 		3F4651362755C61400DC543F /* CoordinatorExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4651352755C61400DC543F /* CoordinatorExampleUITests.swift */; };
+		3F4651592755CDC400DC543F /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4651582755CDC400DC543F /* TabBarCoordinator.swift */; };
+		3F4651612755CDDD00DC543F /* FeedCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4651602755CDDD00DC543F /* FeedCoordinator.swift */; };
+		3F4651662755CDF600DC543F /* ProfileCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4651652755CDF600DC543F /* ProfileCoordinator.swift */; };
+		3F46516B2755CE5400DC543F /* AuthenticationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F46516A2755CE5400DC543F /* AuthenticationCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		3F4651312755C61400DC543F /* CoordinatorExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoordinatorExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F4651352755C61400DC543F /* CoordinatorExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorExampleUITests.swift; sourceTree = "<group>"; };
 		3F4651372755C61400DC543F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F4651582755CDC400DC543F /* TabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCoordinator.swift; sourceTree = "<group>"; };
+		3F4651602755CDDD00DC543F /* FeedCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCoordinator.swift; sourceTree = "<group>"; };
+		3F4651652755CDF600DC543F /* ProfileCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCoordinator.swift; sourceTree = "<group>"; };
+		3F46516A2755CE5400DC543F /* AuthenticationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +107,10 @@
 		3F4651122755C61100DC543F /* CoordinatorExample */ = {
 			isa = PBXGroup;
 			children = (
-				3F4651132755C61100DC543F /* AppDelegate.swift */,
-				3F4651152755C61100DC543F /* SceneDelegate.swift */,
+				3F46514A2755C98C00DC543F /* Supporting */,
+				3F4651492755C8CE00DC543F /* Scenes */,
 				3F4651172755C61100DC543F /* ViewController.swift */,
 				3F4651192755C61100DC543F /* Main.storyboard */,
-				3F46511C2755C61300DC543F /* Assets.xcassets */,
-				3F46511E2755C61400DC543F /* LaunchScreen.storyboard */,
-				3F4651212755C61400DC543F /* Info.plist */,
 			);
 			path = CoordinatorExample;
 			sourceTree = "<group>";
@@ -126,6 +131,61 @@
 				3F4651372755C61400DC543F /* Info.plist */,
 			);
 			path = CoordinatorExampleUITests;
+			sourceTree = "<group>";
+		};
+		3F4651492755C8CE00DC543F /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				3F4651552755CC3F00DC543F /* TabBar */,
+				3F4651562755CC5300DC543F /* Feed */,
+				3F4651572755CC7E00DC543F /* Profile */,
+				3F4651542755CB8700DC543F /* Authentication */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		3F46514A2755C98C00DC543F /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				3F4651132755C61100DC543F /* AppDelegate.swift */,
+				3F4651152755C61100DC543F /* SceneDelegate.swift */,
+				3F46511C2755C61300DC543F /* Assets.xcassets */,
+				3F46511E2755C61400DC543F /* LaunchScreen.storyboard */,
+				3F4651212755C61400DC543F /* Info.plist */,
+			);
+			path = Supporting;
+			sourceTree = "<group>";
+		};
+		3F4651542755CB8700DC543F /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				3F46516A2755CE5400DC543F /* AuthenticationCoordinator.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		3F4651552755CC3F00DC543F /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				3F4651582755CDC400DC543F /* TabBarCoordinator.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		3F4651562755CC5300DC543F /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				3F4651602755CDDD00DC543F /* FeedCoordinator.swift */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		3F4651572755CC7E00DC543F /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				3F4651652755CDF600DC543F /* ProfileCoordinator.swift */,
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,8 +318,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F4651612755CDDD00DC543F /* FeedCoordinator.swift in Sources */,
+				3F46516B2755CE5400DC543F /* AuthenticationCoordinator.swift in Sources */,
 				3F4651182755C61100DC543F /* ViewController.swift in Sources */,
 				3F4651142755C61100DC543F /* AppDelegate.swift in Sources */,
+				3F4651592755CDC400DC543F /* TabBarCoordinator.swift in Sources */,
+				3F4651662755CDF600DC543F /* ProfileCoordinator.swift in Sources */,
 				3F4651162755C61100DC543F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -438,7 +502,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J8JPD2534R;
-				INFOPLIST_FILE = CoordinatorExample/Info.plist;
+				INFOPLIST_FILE = CoordinatorExample/Supporting/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -446,7 +510,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.antonholab.CoordinatorExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -457,7 +521,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J8JPD2534R;
-				INFOPLIST_FILE = CoordinatorExample/Info.plist;
+				INFOPLIST_FILE = CoordinatorExample/Supporting/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -465,7 +529,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.antonholab.CoordinatorExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
